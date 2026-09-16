@@ -1,3 +1,10 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
 nav {
   background-color: darkblue;
   padding: 10px;
@@ -14,6 +21,20 @@ h1 {
 }
 
 img {
+  border: 1px solid black;
+  padding: 2px;
+}
+
+p {
+  padding: 0;
+}
+
+main {
+  max-width: 840px;
+  padding: 20px 50px;
+}
+
+main img {
   width: 150px;
   height: auto;
   border: 1px solid black;
@@ -21,6 +42,23 @@ img {
   box-shadow: 0 0 30px gray;
 }
 
-p {
-  padding: 10px;
+aside {
+  width: 100vw;
+  margin: 0;
+  border: 1px solid #bbbbf5;
+  padding: 50px;
+  background-color: rgba(0, 0, 139, .1);
+  color: #000;
+  box-sizing: border-box;
+}
+
+aside img {
+  width: 200px;
+  height: auto;
+}
+
+footer {
+  margin-top: 20px;
+  border-top: 1px solid rgb(66, 66, 66);
+  text-align: center;
 }
