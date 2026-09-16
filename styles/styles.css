@@ -43,7 +43,7 @@ main img {
 }
 
 aside {
-  width: 100vw;
+  width: 100%;
   margin: 0;
   border: 1px solid #bbbbf5;
   padding: 50px;
