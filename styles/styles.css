@@ -1,3 +1,8 @@
+:root {
+  --color-darkblue: darkblue;
+  --border-black: 1px solid black
+}
+
 html,
 body {
   margin: 0;
@@ -6,7 +11,7 @@ body {
 }
 
 nav {
-  background-color: darkblue;
+  background-color: var(--color-darkblue);
   padding: 10px;
 }
 
@@ -17,11 +22,11 @@ nav a {
 }
 
 h1 {
-  color: darkblue;
+  color: var(--color-darkblue);
 }
 
 img {
-  border: 1px solid black;
+  border: var(--border-black);
   padding: 2px;
 }
 
@@ -37,7 +42,7 @@ main {
 main img {
   width: 150px;
   height: auto;
-  border: 1px solid black;
+  border: var(--border-black);
   padding: 2px;
   box-shadow: 0 0 30px gray;
 }
