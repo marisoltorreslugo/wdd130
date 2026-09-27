@@ -9,6 +9,13 @@
   box-sizing: border-box;
 }
 
+header,
+footer,
+.grid {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
 html,
 body {
   margin: 0;
@@ -21,17 +28,29 @@ body {
 nav {
   background-color: var(--color-darkblue);
   padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 nav a {
-  color: white;
+  color: #fff;
   display: block;
   padding: 20px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 h1 {
   color: var(--color-darkblue);
   padding: .7rem;
+  border-bottom: 1px solid gray;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
 }
 
 img {
@@ -45,8 +64,9 @@ p {
 }
 
 main {
-  max-width: 840px;
-  padding: 20px 50px;
+  grid-column: 2/3;
+  /*padding: 20px 50px;*/
+  margin: 1rem;
 }
 
 main img {
@@ -56,10 +76,10 @@ main img {
   padding: 2px;
   box-shadow: 0 0 30px gray;
   float: right;
-  margin: 0 0 1rem 1rem
+  margin: 2rem 1rem 1rem 1rem
 }
 
-aside {
+/* aside {
   position: relative;
   width: 100%;
   margin: 0;
@@ -68,18 +88,25 @@ aside {
   background-color: rgba(0, 0, 139, .1);
   color: #000;
   box-sizing: border-box;
+} */
+
+aside {
+  width: 20rem;
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 
 aside img {
-  width: 200px;
+  width: 100%;
   height: auto;
 }
 
 aside h2 {
   position: absolute;
-  top: 20px;
-  left: 60px;
-  color: #fff
+  top: 190px;
+  left: 95px;
+  color: #fff;
 }
 
 footer {
