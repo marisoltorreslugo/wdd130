@@ -82,14 +82,126 @@ section.adventure h2 {
   justify-content: center;
 }
 
-div label.col-1 {
-  display: flex;
-  width: 70%;
-  justify-content: center;
-}
-
 .col-2 {
   display: flex;
   flex: 30%;
   justify-content: flex-end;
+}
+
+/** Contact Form **/
+
+.company-information {
+  text-align: center;
+  padding: 30px 15px 50px 15px;
+  background-color: var(--accent2-color);
+  margin-top: -1rem;
+  margin-bottom: 20px;
+}
+
+.contact h1 {
+  margin-bottom: 10px;
+}
+
+.contact p {
+  margin-bottom: 5px;
+  margin-top: 0;
+  padding: 0;
+}
+
+.contact section.contact-form {
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 50px;
+}
+
+.contact div.box {
+  padding: 0 5px 0 25px;
+  width: 100%;
+}
+
+.contact .row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact .row-column {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 10px;
+}
+
+.contact .row-column label {
+  margin-bottom: 5px;
+}
+
+.contact .row-column textarea {
+  flex: 0 0 100%;
+  width: 100%;
+}
+
+.contact .row .col-1 {
+  flex: 0 0 35%;
+  justify-content: start;
+}
+
+.contact .row .col-2 {
+  flex: 0 0 65%;
+  box-sizing: border-box;
+  padding: 8px;
+}
+
+.contact .col-2 input {
+  margin-right: 6px;
+  margin-bottom: 8px;
+}
+
+.contact .employees h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-family: var(--body-font);
+}
+
+.contact div.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.contact .image-container figure img {
+  width: 120px;
+  border-radius: 7px;
+}
+
+.contact .img-caption {
+  display: flex;
+  justify-content: center;
+}
+
+.contact button {
+  background-color: var(--accent1-color);
+  color: #fff;
+  font-size: 1rem;
+  margin: 20px auto;
+  display: block;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(0 0 0 / 10%);
+  box-shadow: 0 0 30px #eee;
+  padding: 0.75rem;
+  min-width: 350px;
+}
+
+.contact iframe {
+  border: 0;
+}
+
+.contact .options-message input {
+  margin-right: 6px;
+}
+
+.contact .options-message div {
+  margin-bottom: 6px;
 }
