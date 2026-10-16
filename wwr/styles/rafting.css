@@ -2,11 +2,16 @@
   text-decoration: none;
 }
 
-.hero {
+.hero,
+.header-image,
+.footer-image {
   position: relative;
 }
 
-.hero img {
+.hero img,
+.header-image img,
+.trips .header-image img,
+.trips .footer-image img {
   display: block;
   width: 100%;
   height: auto;
@@ -54,7 +59,9 @@ div.image-container {
 }
 
 section.history h2,
-section.adventure h2 {
+section.adventure h2,
+section.tours h2,
+section.tours p {
   text-align: center;
 }
 
@@ -62,7 +69,8 @@ section.history h2 {
   margin-bottom: 12px;
 }
 
-section.adventure h2 {
+section.adventure h2,
+section.adventure-book h2 {
   margin-bottom: 20px;
 }
 
@@ -204,4 +212,408 @@ section.adventure h2 {
 
 .contact .options-message div {
   margin-bottom: 6px;
+}
+
+.home,
+.trips {
+  margin-top: -1rem;
+}
+
+.home h2,
+.trips h2 {
+  font-family: var(--body-font);
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.home div.cortina,
+.trips div.cortina {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.4;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.trips .footer-image .cortina {
+  opacity: 0.80;
+}
+
+.home .header-text,
+.trips .header-text,
+.trips .footer-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home .header-text h1,
+.trips .header-text h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.home .header-text h1 {
+  margin-bottom: 80px;
+}
+
+.home button,
+.trips button {
+  padding: 15px 25px;
+  border-radius: 50px;
+
+  background-color: var(--accent1-color);
+  color: #fff;
+  font-size: 1rem;
+  display: block;
+  border: 1px solid rgba(255, 255, 255, .85);
+  min-width: 350px;
+  cursor: pointer;
+}
+
+.home .adventure {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.home .adventure img {
+  text-align: center;
+}
+
+.home .adventure .column-1,
+.home .adventure .column-2 {
+  flex: 1;
+}
+
+.home .adventure .column-1 {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.home .adventure .column-2 {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+/* .home .adventure h2 {
+  text-align: start;
+} */
+
+.home .column p {
+  margin: 0;
+  padding: 0;
+}
+
+.home .gallery-container,
+.home .tours {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.home .gallery {
+  gap: 20px;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.gallery-item img {
+  writing-mode: 100%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+.home .container-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.home p {
+  margin: 0;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.home .header-tour {
+  padding: 35px 25px 25px;
+}
+
+.home .header-tour,
+.home .header-tour p {
+  text-align: start;
+}
+
+.home .item {
+  background-color: var(--accent2-color);
+  border: 1px solid #b6b6b6;
+}
+
+.home .container-grid img {
+  width: 100%;
+  height: auto;
+}
+
+.home .row-column {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 10px;
+}
+
+.home .row-column label {
+  margin-bottom: 5px;
+}
+
+.home .row-column textarea {
+  flex: 0 0 100%;
+  width: 100%;
+}
+
+.home .newsletter {
+  background-color: #eaf4ef;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home .newsletter-container {
+  background-color: white;
+  max-width: 500ps;
+  width: 100%;
+  padding: 35px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.home .newsletter h2 {
+  color: #597269;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.home .form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.home .form-group label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #174f3b;
+}
+
+.home .form-group input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.home .form-group input:focus {
+  outline: 2px solid #176b49;
+}
+
+.home .form-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+.home .newsletter button {
+  width: 100%;
+  padding: 14px;
+  background-color: #176b49;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.home .newsletter button:hover {
+  background-color: #105236;
+}
+
+.home .newsletter small {
+  display: block;
+  margin-top: 20px;
+}
+
+.trips .header-image img {
+  height: 350px;
+  object-fit: cover;
+}
+
+.trips .footer-image img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.trips .book-now {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.trips .container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.trips .column {
+  flex: 1;
+  min-width: 0;
+  text-align: center;
+}
+
+.trips .column img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+.trips .column button {
+  min-width: 80%;
+}
+
+.trips .column button {
+  display: block;
+  margin: 15px auto 0;
+}
+
+.trips .column p {
+  text-transform: uppercase;
+}
+
+.trips .life {
+  background-image: url("images/waterfalls_at_old_mines.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 350px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.trips .book-now,
+.trips .adventure-book {
+  margin-bottom: 60px;
+}
+
+.trips .adventure-book {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.trips .footer-text h3 {
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+}
+
+.trips button.contact {
+  background-color: var(--accent2-color);
+  color: #000;
+  font-weight: 600;
+}
+
+.tours {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.tours h2 {
+  margin-bottom: 20px;
+}
+
+.tours-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 40px;
+}
+
+.tours-table tr {
+  border-bottom: 1px solid #ddd;
+
+}
+
+.tours-table td {
+  padding: 20px 10px;
+  vertical-align: middle;
+}
+
+.tour-image img {
+  width: 135px;
+  height: 105px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.tour-info h3 {
+  margin: 0 0 5px;
+  font-size: 18px;
+}
+
+.tour-info span {
+  color: #666;
+  font-size: 13px;
+}
+
+.tour-info p {
+  margin: 4px 0;
+  padding: 0;
+  line-height: 1.3;
+}
+
+.tour-info strong {
+  font-size: 14px;
 }
